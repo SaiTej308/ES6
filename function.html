@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let list=[1,2,3,33445,32434,5]
+        //list.forEach(x => console.log(x*2));
+        //list.map(x=> console.log(x*2))
+        //objects*/
+        
+let Player={
+        name:"sammy",
+        age:20,
+        designation:"Pro Player"
+        }
+        let des=Player.designation;
+        console.log(des);
+
+
+
+        //Destructuring of objects
+        let {name,age,designation}=Player;
+        console.log(name);
+        console.log(age);
+        console.log(designation)
+
+
+
+        //Destructuring of Arrays
+        let students=["Sam","Roy","Mike","lisa","cassie"]
+        //let [n1,n2,n3,n4,n5]=students;
+
+        //Spread operator
+        let [n1,...RL]=students;
+        console.log(n1);
+        console.log(RL);
+
+        //Rest parameter
+        function add(a,...RD){
+            console.log(a);
+            
+            console.log(RD);
+        }
+add(7,3232,723,82,12);
+
+
+
+        /*let a=9;b=6;
+        [b,a]=[a,b]
+        console.log(a)
+        console.log(b)*/
+    </script>
+</body>
+</html>
